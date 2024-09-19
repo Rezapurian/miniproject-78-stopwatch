@@ -1,0 +1,75 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir-Regular.woff) format("woff");
+}
+*{
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #000;
+  user-select: none;
+}
+.stopwatch {
+  display: grid;
+  justify-items: center;
+}
+.time {
+  font-size: 48px;
+  font-weight: 300;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin-top: 23px;
+}
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 35px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button i {
+  background: #fff;
+  color: #1877f2;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f7f6f6;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 13px 15px;
+}
+button i:active {
+  transform: scale(.90);
+}
+#play {
+  display: block;
+  padding-bottom: 15px;
+}
+#pause {
+  display: none;
+  padding-bottom: 15px;
+}
+i {
+  margin: 0 30px;
+}
